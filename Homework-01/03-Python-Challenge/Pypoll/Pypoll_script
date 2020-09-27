@@ -1,0 +1,76 @@
+# Modules
+import os
+import csv
+
+# Set path for file
+csvpath = os.path.join("election_data.csv")
+
+# List for names and total votes
+names = []
+total = 0
+khan = 0
+correy = 0
+li = 0
+tooley = 0
+
+# Define function
+def voter_poll(polldata):
+    voterid = str(polldata[0])
+    county = str(polldata[1])
+    name = names.append(str(polldata[2]))
+
+
+
+
+# Open the CSV
+with open(csvpath, 'r') as csvfile:
+    csvreader = csv.reader(csvfile, delimiter = ',')
+
+    next(csvreader)
+
+    for row in csvreader:
+        voter_poll(row)
+
+# For loop for adding name to counter
+for word in names:
+
+    if word == 'Khan':
+        khan = khan + 1
+
+    elif word == 'Correy':
+        correy = correy + 1
+
+    elif word == 'Li':
+        li = li + 1
+
+    elif word == "O'Tooley":
+        tooley = tooley + 1
+
+# Variables for calculating percentage
+khan_percent = round(khan/ len(names) * 100)
+correy_percent = round(correy/ len(names) * 100)
+li_percent = round(li/ len(names) * 100)
+tooley_percent = round(tooley/ len(names) * 100)
+
+mydict = {
+'Khan': khan,
+'Correy': correy,
+'Li': li,
+'Tooley': tooley
+}
+
+# Print stats
+print('Election Results')
+print('------------------')
+
+
+            #total_months.append(months)
+print(f'Total Votes: {len(names)} ')
+print('------------------')
+print(f'Khan: %{khan_percent} ({khan}) ')
+print(f'Correy: %{correy_percent} ({correy}) ')
+print(f'Li: %{li_percent} ({li})')
+print(f"O'Tooley: %{tooley_percent} ({tooley})")
+print('------------------')
+print(f'Winner: {max(mydict.items(), key = lambda x: x[1])} ')
+print('------------------')
