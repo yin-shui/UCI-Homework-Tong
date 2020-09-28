@@ -19,9 +19,6 @@ def voter_poll(polldata):
     county = str(polldata[1])
     name = names.append(str(polldata[2]))
 
-
-
-
 # Open the CSV
 with open(csvpath, 'r') as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ',')
@@ -59,18 +56,25 @@ mydict = {
 'Tooley': tooley
 }
 
-# Print stats
-print('Election Results')
-print('------------------')
+# output text file
+import os
+
+text_output = os.path.join('Pypoll_Analysis.txt')
+with open(text_output,'w') as text:
 
 
-            #total_months.append(months)
-print(f'Total Votes: {len(names)} ')
-print('------------------')
-print(f'Khan: %{khan_percent} ({khan}) ')
-print(f'Correy: %{correy_percent} ({correy}) ')
-print(f'Li: %{li_percent} ({li})')
-print(f"O'Tooley: %{tooley_percent} ({tooley})")
-print('------------------')
-print(f'Winner: {max(mydict.items(), key = lambda x: x[1])} ')
-print('------------------')
+    # Print stats
+    text.write('Election Results')
+    text.write('------------------')
+
+
+                #total_months.append(months)
+    text.write(f'\nTotal Votes: {len(names)} ')
+    text.write('\n------------------')
+    text.write(f'\nKhan: %{khan_percent} ({khan}) ')
+    text.write(f'\nCorrey: %{correy_percent} ({correy}) ')
+    text.write(f'\nLi: %{li_percent} ({li})')
+    text.write(f"\nO'Tooley: %{tooley_percent} ({tooley})")
+    text.write('\n------------------')
+    text.write(f'\nWinner: {max(mydict.items(), key = lambda x: x[1])} ')
+    text.write('\n------------------')
