@@ -1,0 +1,67 @@
+
+body {
+    background-color: aliceblue;
+    width: 80%;
+    margin: 10%;
+    padding: 0;
+}
+
+.card {
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+.col-md-6 {
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    
+}
+
+.float-container1 {
+    height: 100px;
+    padding: 25px;
+}
+
+.img-page {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+nav {
+    background-color: white;
+}
+
+h2 {
+    display:
+}
+
+.row{
+    clear: both;
+    text-align: center;
+}
+
+#summary-img {
+    padding-right: 10px;
+}
+
+#summary-txt {
+    text-align: left;
+    
+}
+
+.table {
+    background-color: white;
+}
+
+.txt {
+    text-align: center;
+}
+
+@media(max-width:750px){
+    .navbar.navbar-expand-lg.navbar-dark.bg-dark
+}
+
+
