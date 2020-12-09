@@ -77,7 +77,7 @@ Final report includes each of the following:
 3. This leads me to the next data frames which are the purchasing analysis by age, top spenders, and most popular items with these in mind Pymoli can target their internal market and gear ads to their niche accordingly based on age group, top selling item in that age group, and even market it to their top spending users.
 
 
-* Overall a lot more lucrative information can be pulled from even just the data frames created in this homework assignment. I think overall its a good overlook at how this Pymoli game can scale and narrow down their niche market.
+* Overall a lot more lucrative information can be pulled from even just the data frames created in this challenge. I think overall its a good overlook at how this Pymoli game can scale and narrow down their niche market.
 
 
 
