@@ -15,14 +15,17 @@ data.forEach((siting) => {
 });
 
 // Lets make the search engine operational //
+
 // Selects the button
 var button = d3.select('#filter-btn');
 // Selects the form
 var form = d3.select('#datetime');
 
+
 // Sets event handlers
 button.on('click', runEnter);
 form.on('submit', runEnter);
+
 
 function runEnter() {
 
