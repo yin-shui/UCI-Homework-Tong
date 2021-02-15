@@ -4,11 +4,11 @@ I've decided to treat myself to a long holiday vacation in Honolulu, Hawaii! To 
 
 ## Step 1 - Climate Analysis and Exploration
 
-* Choose a start date and end date for your trip. Make sure that your vacation range is approximately 3-15 days total.
+* Choose a start date and end date for your trip. Make sure that vacation range is approximately 3-15 days total.
 
-* Use SQLAlchemy `create_engine` to connect to your sqlite database.
+* Use SQLAlchemy `create_engine` to connect to sqlite database.
 
-* Use SQLAlchemy `automap_base()` to reflect your tables into classes and save a reference to those classes called `Station` and `Measurement`.
+* Use SQLAlchemy `automap_base()` to reflect tables into classes and save a reference to those classes called `Station` and `Measurement`.
 
 ### Precipitation Analysis
 
